@@ -1,12 +1,9 @@
-const express = require("express");
+const express = require('express');
+const router = require('./routes');
 const app = express();
-const Router = require("./routes");
 
 app.use(express.json());
 
-app.use(Router);
+app.use("/",router);
 
-const PORT = 3000 || process.env.PORT;
-app.listen(PORT,()=>{
-    console.log(`Server is running on port ${PORT}`);
-});
+app.listen(3000, () => console.log(`Servidor iniciado em http://localhost:3000/`));
