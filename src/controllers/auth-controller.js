@@ -27,7 +27,6 @@ module.exports = {
     const { email, password } = req.body;
     // verificar se os tipos de dados estao corretos
     if (
-      typeof name !== "string" ||
       typeof email !== "string" ||
       typeof password !== "string"
     ) {
@@ -40,9 +39,9 @@ module.exports = {
     if (user.password !== password) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
-
+    // o payload serve para colocar informações adicionais no token jwt que serao usadas posteriormente
     const payload = { id: user.id, email: user.email };
-    // gerar um token jwt
+    // gerar um token jwt que vai ter o payload e a chave secreta e vai expirar em 1 dia
     const token = jwt.sign(payload, secretKey, { expiresIn: "1d" });
     res.json({ token });
   },

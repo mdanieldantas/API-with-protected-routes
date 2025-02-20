@@ -6,6 +6,6 @@ const router = express.Router();
 
 // rota register do authController
 router.post("/auth/register", authController.register);
-router.post("/auth/register"),authController.login;
+router.post("/auth/login", authController.login); // Corrigido aqui
 
 module.exports = router;
