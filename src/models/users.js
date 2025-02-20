@@ -6,6 +6,13 @@ const users = [
     password: "12",
     role: "admin",
   },
+  {
+    id: 2,
+    name: "Dan",
+    email: "Dan@email.com",
+    password: "12",
+    role: "standard",
+  },
 ];
 
 module.exports = {
@@ -34,7 +41,7 @@ module.exports = {
     // retorna o novo usuário
     return newUser;
   },
-  // registra um novo usuário com role 
+  // registra um novo usuário com role
   createUser: (nome, email, password, role) => {
     // verifica se o usuário já está registrado
     const userAlreadyRegistered = users.find((user) => user.email === email);
@@ -53,7 +60,7 @@ module.exports = {
     // retorna o novo usuário
     return newUser;
   },
-   // deleta um usuário pelo id
+  // deleta um usuário pelo id
   deleteUser: (id) => {
     // verifica se o usuário existe
     const userIndex = users.findIndex((user) => user.id === id);
