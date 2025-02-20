@@ -1,7 +1,8 @@
+const { JWT_SECRET } = require("../config/environment");
 const users = require("../models/users");
 const jwt = require("jsonwebtoken");
 
-const secretKey = "chave-secreta-jwt";
+
 
 module.exports = {
   //post /auth/register
@@ -42,7 +43,7 @@ module.exports = {
     // o payload serve para colocar informações adicionais no token jwt que serao usadas posteriormente
     const payload = { id: user.id, email: user.email };
     // gerar um token jwt que vai ter o payload e a chave secreta e vai expirar em 1 dia
-    const token = jwt.sign(payload, secretKey, { expiresIn: "1d" });
+    const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "1d" });
     res.json({ token });
   },
 };
