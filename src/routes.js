@@ -14,6 +14,8 @@ router.post("/auth/login", authController.login);
 router.get("/welcome", optionalAuth, welcomeController.welcome);
 
 router.get("/users",ensureAuth, ensureAdmin,usersController.index);
+router.post("/users",ensureAuth, ensureAdmin,usersController.save);
 router.get("/users/:id",ensureAuth, ensureAdmin,usersController.show);
+router.delete("/users/:id",ensureAuth, ensureAdmin,usersController.delete);
 
 module.exports = router;
