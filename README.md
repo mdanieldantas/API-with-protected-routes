@@ -1,48 +1,48 @@
 # API-with-protected-routes
 
-## Descrição
-Este é um projeto prático para estudos em backend, focado na criação de uma API com rotas protegidas. O objetivo é aprender e aplicar conceitos de autenticação e autorização em uma aplicação Node.js utilizando Express.
+## Description
+This is a practical project for backend studies, focused on creating an API with protected routes. The goal is to learn and apply authentication and authorization concepts in a Node.js application using Express.
 
-## Link Online
-API-with-protected-routes no GitHub
+## Online Link
+API-with-protected-routes on GitHub
 
-## Imagens do Projeto
-![Projeto](./src/assets/images/image.png) 
+## Project Images
+![Project](./src/assets/images/image.png)
 
-## Funcionalidades
-- 🔒 **Autenticação de Usuários**: Registro e login de usuários com geração de token JWT.
-- 🛡️ **Rotas Protegidas**: Acesso a rotas restritas apenas para usuários autenticados.
-- 👥 **Gestão de Usuários**: CRUD de usuários com diferentes níveis de permissão (admin e standard).
-- 📧 **Validação de Campos**: Verificação de campos obrigatórios e formatos de dados.
+## Features
+- 🔒 **User Authentication**: User registration and login with JWT token generation.
+- 🛡️ **Protected Routes**: Access to restricted routes only for authenticated users.
+- 👥 **User Management**: CRUD for users with different permission levels (admin and standard).
+- 📧 **Field Validation**: Verification of required fields and data formats.
 
-## Tecnologias Utilizadas
+## Technologies Used
 - Node.js
 - Express
 - JSON Web Token (JWT)
 
-## Como Executar o Projeto
-Siga os passos abaixo para clonar, instalar dependências e executar o projeto localmente:
+## How to Run the Project
+Follow the steps below to clone, install dependencies, and run the project locally:
 
-1. Clone o repositório:
+1. Clone the repository:
    ```bash
    git clone https://github.com/mdanieldantas/API-with-protected-routes.git
    ```
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
    ```bash
    cd API-with-protected-routes
    ```
-3. Instale as dependências:
+3. Install dependencies:
    ```bash
    npm install
    ```
-4. Execute o projeto:
+4. Run the project:
    ```bash
    npm run dev
    ```
-   O servidor será iniciado em `http://localhost:3000`.
+   The server will start at `http://localhost:3000`.
 
-## Estrutura do Projeto
-A estrutura de pastas e arquivos do projeto é organizada da seguinte forma:
+## Project Structure
+The folder and file structure of the project is organized as follows:
 
 ```
 API-with-protected-routes/
@@ -63,41 +63,41 @@ API-with-protected-routes/
 └── package.json
 ```
 
-## Aprendizados
-Durante o desenvolvimento deste projeto, foram adquiridos conhecimentos em:
-- Implementação de autenticação e autorização com JWT.
-- Criação de middlewares para proteção de rotas.
-- Estruturação de projetos Node.js com Express.
-- Boas práticas de desenvolvimento backend.
+## Learnings
+During the development of this project, the following knowledge was acquired:
+- Implementation of authentication and authorization with JWT.
+- Creation of middlewares for route protection.
+- Structuring Node.js projects with Express.
+- Best practices in backend development.
 
-## Contribuições
-Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+## Contributions
+Contributions are welcome! Follow the steps below to contribute:
 
-1. Faça um fork do projeto.
-2. Crie uma nova branch:
+1. Fork the project.
+2. Create a new branch:
    ```bash
-   git checkout -b minha-nova-feature
+   git checkout -b my-new-feature
    ```
-3. Faça suas alterações e commit:
+3. Make your changes and commit:
    ```bash
-   git commit -m 'Adiciona nova feature'
+   git commit -m 'Add new feature'
    ```
-4. Envie para o repositório remoto:
+4. Push to the remote repository:
    ```bash
-   git push origin minha-nova-feature
+   git push origin my-new-feature
    ```
-5. Abra um Pull Request.
+5. Open a Pull Request.
 
-## Licença
-Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-## Contato
+## Contact
 
 **M Daniel Dantas**
 
 - **GitHub:** [mdanieldantas](https://github.com/mdanieldantas)
 - **LinkedIn:** [mdanieldantas](https://www.linkedin.com/in/mdanieldantas)
-- **Portfólio:** [Portfólio de Daniel Dantas](https://danieldantasdev.vercel.app)
+- **Portfolio:** [Daniel Dantas Portfolio](https://danieldantasdev.vercel.app)
 - **Email:** [contatomarcosdgomes@gmail.com](mailto:contatomarcosdgomes@gmail.com)
-- **Currículo:** [Baixar Currículo](https://docs.google.com/document/d/1_FpPYPXiifH1B3BDWnJuNk05DQfddCOBqFxyT6Citg4/edit?usp=sharing)
+- **Resume:** [Download Resume](https://docs.google.com/document/d/1_FpPYPXiifH1B3BDWnJuNk05DQfddCOBqFxyT6Citg4/edit?usp=sharing)
 
